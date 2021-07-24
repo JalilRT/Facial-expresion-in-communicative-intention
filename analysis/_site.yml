@@ -1,0 +1,17 @@
+name: "Facial-expresion-in-communicative-intention"
+output_dir: ../docs
+navbar:
+  title: "Facial-expresion-in-communicative-intention"
+  left:
+  - text: Home
+    href: index.html
+  - text: About
+    href: about.html
+  - text: License
+    href: license.html
+output:
+  workflowr::wflow_html:
+    toc: yes
+    toc_float: yes
+    theme: cosmo
+    highlight: textmate
