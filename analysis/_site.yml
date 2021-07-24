@@ -1,7 +1,7 @@
-name: "Facial-expresion-in-communicative-intention"
+name: Facial-expresion-in-communicative-intention
 output_dir: ../docs
 navbar:
-  title: "Facial-expresion-in-communicative-intention"
+  title: Facial-expresion-in-communicative-intention
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/JalilRT/Facial-expresion-in-communicative-intention
 output:
   workflowr::wflow_html:
     toc: yes
