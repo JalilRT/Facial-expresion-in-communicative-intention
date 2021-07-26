@@ -150,3 +150,121 @@ tabla2_verb30
 
 
 ## Experiment 4
+
+```{r message=FALSE, warning=FALSE}
+## Chi
+Data.fMRI <- read_csv('data/E4/chi_2.csv')
+colnames(Data.fMRI)<-c("Emotion","SA","Resp","time")
+Data.fMRI$Emotion<-Data.fMRI$Emotion%>%str_replace("Alegría","Joy") %>%
+  str_replace("Enojo", "Anger")%>%str_replace("Tristeza", "Sadness")%>%
+  str_replace("Sin_rostro","Blur")
+Data.fMRI$SA<-Data.fMRI$SA%>%str_replace("Afirmación","Assertion")%>%
+  str_replace("Exigencia","Demand")%>%str_replace("Ruego","E.Request")%>%str_replace("Ninguno","None")
+chiAH.fMRI <- chisq.test(Data.fMRI$Emotion, Data.fMRI$SA, correct = FALSE)
+chiAH.fMRI$observed
+
+#chisq.post.hoc(chiAH.fMRI$observed,control = "bonferroni")
+
+#chisq.multcomp(chiAH.fMRI$observed, p.method = "none")
+
+Data2.fMRI <- read_csv('data/E4/chi_3.csv')
+shapiro.test(Data2.fMRI$timT)
+kruskal.test(Data2.fMRI$timT~Data2.fMRI$EmResp, data=Data2.fMRI)
+#pairwise.wilcox.test(x=Data2.fMRI$timT, g=Data2.fMRI$EmResp,p.adj = "bonferroni")
+
+#### Figure 5, corr ###
+corrplot(chiAH.fMRI$residuals, is.corr = FALSE,method="color",
+         tl.cex = 1.1, cl.ratio = 0.4,bg="black",addgrid.col = "black",
+         tl.col = "black",tl.srt=45,col= colorRampPalette(c("#0072B5FF","white","#BC3C29FF"))(9)) 
+mtext("X²(9, 16) = 1047.8, p < 0.001", at=2.5, line=-29, cex=1)
+
+#### Figure 5, Reaction time ####
+only.associated<-Data2.fMRI %>% filter(EmResp == "AlegríaAfirmación" |
+                                       EmResp == "EnojoExigencia" |
+                                       EmResp == "TristezaRuego")
+my_comparisons <- list( c("AlegríaAfirmación", "EnojoExigencia"), 
+                        c("EnojoExigencia", "TristezaRuego"), 
+                        c("AlegríaAfirmación", "TristezaRuego") )
+fig5b<-ggviolin(only.associated,x="EmResp",y="timT",fill="EmResp",
+         add = "boxplot", add.params = list(fill = "white"))+
+  labs(x="Conjunction",y="Reaction time")+
+  theme(legend.position = "none", axis.title = element_text(size=12, face="bold"))+
+  scale_x_discrete(labels=c("Joy-Assertion","Anger-Demand", "Sadness-E. Request"))+  
+  stat_compare_means(comparisons = my_comparisons, label = "p.signif")+
+  stat_compare_means(label.y = 4000) +
+  stat_summary(fun.data = function(x) data.frame(y=3800, label = paste("Mean=",round(mean(x),2))), geom="text")+
+  scale_fill_nejm()
+
+fig5b
+```
+
+Emotional categorization task
+
+```{r message=FALSE, warning=FALSE}
+## 
+C4.Data.fMRI <- read_csv('data/E4/chi_C4.csv')
+colnames(C4.Data.fMRI)<-c("Emotion","Resp","Resp_Corr")
+C4.Data.fMRI$Emotion<-C4.Data.fMRI$Emotion%>%str_replace("Alegría","Joy") %>%
+  str_replace("Enojo", "Anger")%>%str_replace("Tristeza", "Sadness")%>%
+  str_replace("Sin_Rostro","Blur")
+C4.Data.fMRI$Resp<-C4.Data.fMRI$Emotion%>%str_replace("Alegría","Joy") %>%
+  str_replace("Enojo", "Anger")%>%str_replace("Tristeza", "Sadness")%>%
+  str_replace("Sin_Rostro","Blur")
+C4.chiAH.fMRI <- chisq.test(C4.Data.fMRI$Emotion, C4.Data.fMRI$Resp, correct = FALSE)
+C4.chiAH.fMRI$observed
+
+corrplot(C4.chiAH.fMRI$residuals, is.corr = FALSE,method="color",
+         tl.cex = 1.1, cl.ratio = 0.4,bg="black",addgrid.col = "black",
+         tl.col = "black",tl.srt=45,col= colorRampPalette(c("#E18727FF","white","white","#0072B5FF"))(9)) 
+mtext("X²(9.16) = 638.37, p < 0.001", at=2.5, line=-25, cex=1)
+```
+
+Plots brain
+
+```{r message=FALSE, warning=FALSE}
+stat1lh<-ggdraw()+draw_image("data/E4/stat1lh.png")
+stat1rh<-ggdraw()+draw_image("data/E4/stat1rh.png")
+stat1lh180<-ggdraw()+draw_image("data/E4/stat1lh180.png")
+stat1rh180<-ggdraw()+draw_image("data/E4/stat1rh180.png")
+stat1<-plot_grid(stat1lh,stat1rh,stat1lh180,stat1rh180,nrow = 2)
+
+stat2lh<-ggdraw()+draw_image("data/E4/stat2lh.png")
+stat2rh<-ggdraw()+draw_image("data/E4/stat2rh.png")
+stat2lh180<-ggdraw()+draw_image("data/E4/stat2lh180.png")
+stat2rh180<-ggdraw()+draw_image("data/E4/stat2rh180.png")
+stat2<-plot_grid(stat2lh,stat2rh,stat2lh180,stat2rh180,nrow = 2)
+
+stat3lh<-ggdraw()+draw_image("data/E4/stat3lh.png")
+stat3rh<-ggdraw()+draw_image("data/E4/stat3rh.png")
+stat3lh180<-ggdraw()+draw_image("data/E4/stat3lh180.png")
+stat3rh180<-ggdraw()+draw_image("data/E4/stat3rh180.png")
+stat3<-plot_grid(stat3lh,stat3rh,stat3lh180,stat3rh180,nrow = 2)
+
+stat4lh<-ggdraw()+draw_image("data/E4/stat4lh.png")
+stat4rh<-ggdraw()+draw_image("data/E4/stat4rh.png")
+stat4lh180<-ggdraw()+draw_image("data/E4/stat4lh180.png")
+stat4rh180<-ggdraw()+draw_image("data/E4/stat4rh180.png")
+stat4<-plot_grid(stat4lh,stat4rh,stat4lh180,stat4rh180,nrow = 2)
+
+stats<-plot_grid(stat1,stat2,stat3,stat4,labels = "AUTO")
+stats12<-plot_grid(stat1,stat2,labels = "AUTO")
+stats34<-plot_grid(stat3,stat4,labels = c("C","D"))
+stats12
+stats34
+
+## PPI
+ppi.stat1lh<-ggdraw()+draw_image("data/E4/mvpa_lh.png")
+ppi.stat1rh<-ggdraw()+draw_image("data/E4/mvpa_rh.png")
+ppi.stat1lh180<-ggdraw()+draw_image("data/E4/mvpa_lh180.png")
+ppi.stat1rh180<-ggdraw()+draw_image("data/E4/mvpa_rh180.png")
+ppi.stat1<-plot_grid(ppi.stat1lh,ppi.stat1rh,ppi.stat1lh180,ppi.stat1rh180,ncol = 2)
+ppi.mask1<-ggdraw()+draw_image("data/E4/mask.png",scale = 0.95)
+ppi.mask2<-ggdraw()+draw_image("data/E4/masklh.png",scale = 0.95)
+ppi.mask<-plot_grid(ppi.mask1,ppi.mask2,nrow = 2)
+ppi.ms<-plot_grid(ppi.stat1,ppi.mask,ncol = 2,labels = "AUTO")
+
+ppi.all<-ggdraw()+draw_image("data/E4/ppi_a2.png")
+ppi<-plot_grid(ppi.ms,ppi.all,labels = c("","C"),nrow = 2)
+ppi
+```
+
