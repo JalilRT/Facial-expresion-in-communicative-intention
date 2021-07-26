@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Neural processing of facial expressions as modulators of communicative intention"
 site: workflowr::wflow_site
 output:
   workflowr::wflow_html:
@@ -8,4 +8,24 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Preprint version: 
+
+Dataset and code for "Neural processing of facial expressions as modulators of communicative intention" analysis
+
+Please let us know if something in the code is incomplete or files are missing or you have any problems.
+
+jalil.rasgadoto@gmail.com
+
+## About
+
+In the present study, we tested whether previous observation of a facial expression associated with an emotion can modify the interpretation of a speech act that follows a facial expression; thus providing empirical evidence that facial expression impacts communication.
+
+## Abstract
+
+Speakers use a variety of contextual information, such as facial emotional expressions for the successful transmission of their message. Listeners must decipher the meaning by understanding the intention behind it (Recanati, 1986). A traditional approach to the study of communicative intention has been through speech acts (Escandell, 2006). The objective of the present study is to contribute to the understanding of the influence of facial expression to the recognition of communicative intention. The study sought to: verify the reliability of facial expressions recognition, find if there is an association between a facial expression and a category of speech acts, test if words contain an intentional load independent of the facial expression presented, and test whether facial expressions can modify an utterance’s communicative intention and the neural correlates associated using univariate and multivariate approaches. We found that previous observation of a facial expression associated with an emotion can modify the interpretation of an assertive utterance that followed the facial expression. The hemodynamic brain response to an assertive utterance was moderated by the preceding facial expression and that classification based on the emotions expressed by the facial expression could be decoded by fluctuations in the brain’s hemodynamic response during the presentation of the assertive utterance. Neuroimaging data showed activation of regions involved in language, intentionality and face recognition during the utterance’s reading. Our results indicate that facial expression is a relevant contextual cue that decodes the intention of an utterance, and during decoding it engages different brain regions in agreement with the emotion expressed.
+
+## Data
+BIDS compliant raw MRI data are available at OpenNeuro: https://openneuro.org/datasets/ds003481
+
+Psychometric data and Classification Tasks are in: [data/](https://github.com/JalilRT/Facial-expresion-in-communicative-intention/tree/master/data)
+

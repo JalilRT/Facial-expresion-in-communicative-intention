@@ -1,0 +1,128 @@
+Tiempo,ImagenesE,ClaveEn,Emocion,NumEn,Enunciado,ActoHabla,Clave,Cara,n,Resp_Bloque1.keys_raw,Resp_Bloque1.rt_mean,Resp_Bloque1.rt_raw,Resp_Bloque1.rt_std,order
+0.25,Stim\\03_028.jpg,Tr28_2,Tristeza,2,Jonathan pasea al perro.,Afirmación,Tr28,28,1.0,'4',0.600205004215,0.6002050042152405,0.0,0.0
+2.5,Stim\\05_075.jpg,En75_12,Enojo,12,Ana compra el libro.,Afirmación,En75,75,1.0,'2',0.550308763981,0.5503087639808655,0.0,1.0
+0.25,Stim\\02_078.jpg,Al78_11,Alegría,11,María asiste a la cena.,Afirmación,Al78,78,1.0,'3',0.433857917786,0.43385791778564453,0.0,2.0
+0.25,Stim\\02_078.jpg,Al78_8,Alegría,8,Estefanía despierta a las 7 a.m.,Afirmación,Al78,78,1.0,'3',0.43373966217,0.43373966217041016,0.0,3.0
+0.25,Stim\\05_028.jpg,En28_6,Enojo,6,Eduardo camina hacia la biblioteca.,Afirmación,En28,28,1.0,'2',0.434104710817,0.43410471081733704,0.0,4.0
+0.25,Stim\\02_019.jpg,Al19_14,Alegría,14,Elizabeth elige la ropa un día antes.,Afirmación,Al19,19,1.0,'3',1.16664206982,1.1666420698165894,0.0,5.0
+2.5,Stim\\05_078.jpg,En78_1,Enojo,1,Juan colecciona monedas antiguas.,Afirmación,En78,78,1.0,'2',0.600230872631,0.600230872631073,0.0,6.0
+2.5,Stim\\02_078.jpg,Al78_15,Alegría,15,Ángel envía una carta a la abuela.,Afirmación,Al78,78,1.0,'3',0.550377488136,0.5503774881362915,0.0,7.0
+0.25,Stim\\02_075.jpg,Al75_14,Alegría,14,Elizabeth elige la ropa un día antes.,Afirmación,Al75,75,1.0,'3',0.450501590967,0.45050159096717834,0.0,8.0
+2.5,Stim\\02_075.jpg,Al75_2,Alegría,2,Jonathan pasea al perro.,Afirmación,Al75,75,1.0,'3',0.650298476219,0.6502984762191772,0.0,9.0
+0.25,Stim\\05_075.jpg,En75_12,Enojo,12,Ana compra el libro.,Afirmación,En75,75,1.0,'2',0.500081896782,0.5000818967819214,0.0,10.0
+2.5,Stim\\03_078.jpg,Tr78_8,Tristeza,8,Estefanía despierta a las 7 a.m.,Afirmación,Tr78,78,1.0,'4',0.400401890278,0.40040189027786255,0.0,11.0
+0.25,Stim\\03_078.jpg,Tr78_15,Tristeza,15,Ángel envía una carta a la abuela.,Afirmación,Tr78,78,1.0,'4',0.483488202095,0.48348820209503174,0.0,12.0
+0.25,Stim\\03_078.jpg,Tr78_5,Tristeza,5,Emilio revisa el formato del archivo.,Afirmación,Tr78,78,1.0,'4',0.900232076645,0.9002320766448975,0.0,13.0
+2.5,Stim\\02_019.jpg,Al19_5,Alegría,5,Emilio revisa el formato del archivo.,Afirmación,Al19,19,1.0,'3',1.00012409687,1.0001240968704224,0.0,14.0
+2.5,Stim\\03_075.jpg,Tr75_10,Tristeza,10,Laura finaliza la obra.,Afirmación,Tr75,75,1.0,'4',0.950330913067,0.950330913066864,0.0,15.0
+2.5,Stim\\03_075.jpg,Tr75_4,Tristeza,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,Tr75,75,1.0,'3',1.61677062511,1.616770625114441,0.0,16.0
+0.25,Stim\\03_028.jpg,Tr28_5,Tristeza,5,Emilio revisa el formato del archivo.,Afirmación,Tr28,28,1.0,'4',0.850269794464,0.8502697944641113,0.0,17.0
+0.25,Stim\\05_075.jpg,En75_11,Enojo,11,María asiste a la cena.,Afirmación,En75,75,1.0,'3',2.59960126877,2.5996012687683105,0.0,18.0
+0.25,Stim\\02_075.jpg,Al75_6,Alegría,6,Eduardo camina hacia la biblioteca.,Afirmación,Al75,75,1.0,'3',0.600619137287,0.6006191372871399,0.0,19.0
+0.25,Stim\\05_078.jpg,En78_1,Enojo,1,Juan colecciona monedas antiguas.,Afirmación,En78,78,1.0,'2',2.74956703186,2.7495670318603516,0.0,20.0
+2.5,Stim\\03_019.jpg,Tr19_4,Tristeza,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,Tr19,19,1.0,'3',0.650220811367,0.6502208113670349,0.0,21.0
+0.25,Stim\\03_028.jpg,Tr28_11,Tristeza,11,María asiste a la cena.,Afirmación,Tr28,28,1.0,'4',0.500543296337,0.5005432963371277,0.0,22.0
+0.25,Stim\\02_019.jpg,Al19_7,Alegría,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Al19,19,1.0,'3',1.05011081696,1.0501108169555664,0.0,23.0
+0.25,Stim\\05_028.jpg,En28_1,Enojo,1,Juan colecciona monedas antiguas.,Afirmación,En28,28,1.0,'2',0.500379562378,0.5003795623779297,0.0,24.0
+0.25,Stim\\03_019.jpg,Tr19_6,Tristeza,6,Eduardo camina hacia la biblioteca.,Afirmación,Tr19,19,1.0,'3',0.45024189353,0.45024189352989197,0.0,25.0
+0.25,Stim\\03_078.jpg,Tr78_7,Tristeza,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Tr78,78,1.0,'4',0.550379753113,0.550379753112793,0.0,26.0
+2.5,Stim\\03_019.jpg,Tr19_15,Tristeza,15,Ángel envía una carta a la abuela.,Afirmación,Tr19,19,1.0,'3',0.550431966782,0.5504319667816162,0.0,27.0
+2.5,Stim\\02_028.jpg,Al28_4,Alegría,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,Al28,28,1.0,'3',0.433741003275,0.4337410032749176,0.0,28.0
+2.5,Stim\\03_078.jpg,Tr78_5,Tristeza,5,Emilio revisa el formato del archivo.,Afirmación,Tr78,78,1.0,'4',1.36664998531,1.3666499853134155,0.0,29.0
+2.5,Stim\\03_028.jpg,Tr28_12,Tristeza,12,Ana compra el libro.,Afirmación,Tr28,28,1.0,'4',0.650278866291,0.6502788662910461,0.0,30.0
+0.25,Stim\\02_028.jpg,Al28_2,Alegría,2,Jonathan pasea al perro.,Afirmación,Al28,28,1.0,'3',1.00023293495,1.0002329349517822,0.0,31.0
+0.25,Stim\\05_019.jpg,En19_8,Enojo,8,Estefanía despierta a las 7 a.m.,Afirmación,En19,19,1.0,'2',0.650451958179,0.6504519581794739,0.0,32.0
+0.25,Stim\\03_019.jpg,Tr19_9,Tristeza,9,Marco colabora en la organización del evento.,Afirmación,Tr19,19,1.0,'3',0.500313460827,0.5003134608268738,0.0,33.0
+2.5,Stim\\02_078.jpg,Al78_10,Alegría,10,Laura finaliza la obra.,Afirmación,Al78,78,1.0,'3',0.400272488594,0.4002724885940552,0.0,34.0
+2.5,Stim\\02_075.jpg,Al75_15,Alegría,15,Ángel envía una carta a la abuela.,Afirmación,Al75,75,1.0,'3',0.400005161762,0.40000516176223755,0.0,35.0
+2.5,Stim\\03_028.jpg,Tr28_6,Tristeza,6,Eduardo camina hacia la biblioteca.,Afirmación,Tr28,28,1.0,'4',1.05024433136,1.0502443313598633,0.0,36.0
+0.25,Stim\\03_075.jpg,Tr75_14,Tristeza,14,Elizabeth elige la ropa un día antes.,Afirmación,Tr75,75,1.0,'3',0.550361871719,0.5503618717193604,0.0,37.0
+2.5,Stim\\05_075.jpg,En75_13,Enojo,13,Rocío consume alimentos nutritivos.,Afirmación,En75,75,1.0,'2',0.53362762928,0.5336276292800903,0.0,38.0
+2.5,Stim\\03_075.jpg,Tr75_8,Tristeza,8,Estefanía despierta a las 7 a.m.,Afirmación,Tr75,75,1.0,'4',1.56669139862,1.5666913986206055,0.0,39.0
+0.25,Stim\\05_075.jpg,En75_7,Enojo,7,Roberto contesta los cuestionarios solicitados.,Afirmación,En75,75,1.0,'2',0.816843211651,0.8168432116508484,0.0,40.0
+2.5,Stim\\03_019.jpg,Tr19_10,Tristeza,10,Laura finaliza la obra.,Afirmación,Tr19,19,1.0,'3',2.86618518829,2.866185188293457,0.0,41.0
+2.5,Stim\\03_019.jpg,Tr19_2,Tristeza,2,Jonathan pasea al perro.,Afirmación,Tr19,19,1.0,'3',0.450287401676,0.450287401676178,0.0,42.0
+0.25,Stim\\03_075.jpg,Tr75_15,Tristeza,15,Ángel envía una carta a la abuela.,Afirmación,Tr75,75,1.0,'3',0.850353300571,0.8503533005714417,0.0,43.0
+0.25,Stim\\05_019.jpg,En19_1,Enojo,1,Juan colecciona monedas antiguas.,Afirmación,En19,19,1.0,'2',0.700258076191,0.7002580761909485,0.0,44.0
+0.25,Stim\\03_078.jpg,Tr78_2,Tristeza,2,Jonathan pasea al perro.,Afirmación,Tr78,78,1.0,'4',0.55001115799,0.550011157989502,0.0,45.0
+2.5,Stim\\02_019.jpg,Al19_9,Alegría,9,Marco colabora en la organización del evento.,Afirmación,Al19,19,1.0,'3',0.650354266167,0.650354266166687,0.0,46.0
+2.5,Stim\\03_028.jpg,Tr28_11,Tristeza,11,María asiste a la cena.,Afirmación,Tr28,28,1.0,'4',0.483873307705,0.48387330770492554,0.0,47.0
+2.5,Stim\\05_078.jpg,En78_6,Enojo,6,Eduardo camina hacia la biblioteca.,Afirmación,En78,78,1.0,'2',1.11691629887,1.116916298866272,0.0,48.0
+2.5,Stim\\02_028.jpg,Al28_14,Alegría,14,Elizabeth elige la ropa un día antes.,Afirmación,Al28,28,1.0,'3',0.400002509356,0.40000250935554504,0.0,49.0
+0.25,Stim\\03_019.jpg,Tr19_10,Tristeza,10,Laura finaliza la obra.,Afirmación,Tr19,19,1.0,'3',0.500369250774,0.5003692507743835,0.0,50.0
+2.5,Stim\\05_019.jpg,En19_2,Enojo,2,Jonathan pasea al perro.,Afirmación,En19,19,1.0,'2',0.533701241016,0.5337012410163879,0.0,51.0
+0.25,Stim\\05_078.jpg,En78_5,Enojo,5,Emilio revisa el formato del archivo.,Afirmación,En78,78,1.0,'2',1.16676211357,1.166762113571167,0.0,52.0
+2.5,Stim\\02_075.jpg,Al75_5,Alegría,5,Emilio revisa el formato del archivo.,Afirmación,Al75,75,1.0,'3',0.433566987514,0.43356698751449585,0.0,53.0
+0.25,Stim\\05_028.jpg,En28_9,Enojo,9,Marco colabora en la organización del evento.,Afirmación,En28,28,1.0,'2',0.400344312191,0.4003443121910095,0.0,54.0
+2.5,Stim\\03_019.jpg,Tr19_1,Tristeza,1,Juan colecciona monedas antiguas.,Afirmación,Tr19,19,1.0,'3',0.400344312191,0.4003443121910095,0.0,55.0
+0.25,Stim\\02_028.jpg,Al28_3,Alegría,3,Andrea diseña la portada del libro.,Afirmación,Al28,28,1.0,'3',0.350245952606,0.35024595260620117,0.0,56.0
+0.25,Stim\\05_028.jpg,En28_5,Enojo,5,Emilio revisa el formato del archivo.,Afirmación,En28,28,1.0,'2',0.533657491207,0.5336574912071228,0.0,57.0
+2.5,Stim\\03_078.jpg,Tr78_15,Tristeza,15,Ángel envía una carta a la abuela.,Afirmación,Tr78,78,1.0,'4',0.650200307369,0.6502003073692322,0.0,58.0
+0.25,Stim\\02_078.jpg,Al78_10,Alegría,10,Laura finaliza la obra.,Afirmación,Al78,78,1.0,'3',0.383520811796,0.38352081179618835,0.0,59.0
+0.25,Stim\\03_075.jpg,Tr75_7,Tristeza,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Tr75,75,1.0,'4',2.13310742378,2.1331074237823486,0.0,60.0
+0.25,Stim\\03_075.jpg,Tr75_5,Tristeza,5,Emilio revisa el formato del archivo.,Afirmación,Tr75,75,1.0,'4',0.65053498745,0.650534987449646,0.0,61.0
+0.25,Stim\\05_075.jpg,En75_14,Enojo,14,Elizabeth elige la ropa un día antes.,Afirmación,En75,75,1.0,'2',0.550257921219,0.5502579212188721,0.0,62.0
+0.25,Stim\\05_075.jpg,En75_2,Enojo,2,Jonathan pasea al perro.,Afirmación,En75,75,1.0,'2',0.483708620071,0.48370862007141113,0.0,63.0
+0.25,Stim\\02_078.jpg,Al78_6,Alegría,6,Eduardo camina hacia la biblioteca.,Afirmación,Al78,78,1.0,'3',0.500392913818,0.5003929138183594,0.0,64.0
+0.25,Stim\\03_075.jpg,Tr75_4,Tristeza,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,Tr75,75,1.0,'4',0.450203508139,0.4502035081386566,0.0,65.0
+0.25,Stim\\03_075.jpg,Tr75_3,Tristeza,3,Andrea diseña la portada del libro.,Afirmación,Tr75,75,1.0,'4',0.450248122215,0.450248122215271,0.0,66.0
+0.25,Stim\\02_028.jpg,Al28_10,Alegría,10,Laura finaliza la obra.,Afirmación,Al28,28,1.0,'3',0.500582158566,0.5005821585655212,0.0,67.0
+0.25,Stim\\03_028.jpg,Tr28_12,Tristeza,12,Ana compra el libro.,Afirmación,Tr28,28,1.0,'4',0.383643090725,0.38364309072494507,0.0,68.0
+0.25,Stim\\03_075.jpg,Tr75_10,Tristeza,10,Laura finaliza la obra.,Afirmación,Tr75,75,1.0,'4',0.500258624554,0.5002586245536804,0.0,69.0
+0.25,Stim\\02_028.jpg,Al28_8,Alegría,8,Estefanía despierta a las 7 a.m.,Afirmación,Al28,28,1.0,'3',0.400318443775,0.400318443775177,0.0,70.0
+0.25,Stim\\05_078.jpg,En78_14,Enojo,14,Elizabeth elige la ropa un día antes.,Afirmación,En78,78,1.0,'2',0.400227844715,0.4002278447151184,0.0,71.0
+2.5,Stim\\03_078.jpg,Tr78_9,Tristeza,9,Marco colabora en la organización del evento.,Afirmación,Tr78,78,1.0,'4',0.400252848864,0.4002528488636017,0.0,72.0
+0.25,Stim\\02_019.jpg,Al19_3,Alegría,3,Andrea diseña la portada del libro.,Afirmación,Al19,19,1.0,'3',0.400361269712,0.4003612697124481,0.0,73.0
+0.25,Stim\\03_078.jpg,Tr78_6,Tristeza,6,Eduardo camina hacia la biblioteca.,Afirmación,Tr78,78,1.0,'4',0.383835405111,0.38383540511131287,0.0,74.0
+0.25,Stim\\03_028.jpg,Tr28_8,Tristeza,8,Estefanía despierta a las 7 a.m.,Afirmación,Tr28,28,1.0,'4',0.800110757351,0.8001107573509216,0.0,75.0
+2.5,Stim\\05_078.jpg,En78_9,Enojo,9,Marco colabora en la organización del evento.,Afirmación,En78,78,1.0,'2',0.600390195847,0.6003901958465576,0.0,76.0
+2.5,Stim\\02_028.jpg,Al28_6,Alegría,6,Eduardo camina hacia la biblioteca.,Afirmación,Al28,28,1.0,'3',0.400293439627,0.4002934396266937,0.0,77.0
+2.5,Stim\\03_078.jpg,Tr78_6,Tristeza,6,Eduardo camina hacia la biblioteca.,Afirmación,Tr78,78,1.0,'4',0.400223851204,0.40022385120391846,0.0,78.0
+2.5,Stim\\02_078.jpg,Al78_2,Alegría,2,Jonathan pasea al perro.,Afirmación,Al78,78,1.0,'3',0.500276446342,0.5002764463424683,0.0,79.0
+2.5,Stim\\02_028.jpg,Al28_10,Alegría,10,Laura finaliza la obra.,Afirmación,Al28,28,1.0,'3',0.433743685484,0.4337436854839325,0.0,80.0
+2.5,Stim\\02_019.jpg,Al19_15,Alegría,15,Ángel envía una carta a la abuela.,Afirmación,Al19,19,1.0,'3',0.400302827358,0.40030282735824585,0.0,81.0
+0.25,Stim\\03_019.jpg,Tr19_5,Tristeza,5,Emilio revisa el formato del archivo.,Afirmación,Tr19,19,1.0,'3',0.550273060799,0.550273060798645,0.0,82.0
+0.25,Stim\\02_075.jpg,Al75_12,Alegría,12,Ana compra el libro.,Afirmación,Al75,75,1.0,'3',0.383791685104,0.3837916851043701,0.0,83.0
+2.5,Stim\\05_078.jpg,En78_3,Enojo,3,Andrea diseña la portada del libro.,Afirmación,En78,78,1.0,'2',0.40068346262,0.4006834626197815,0.0,84.0
+2.5,Stim\\03_075.jpg,Tr75_5,Tristeza,5,Emilio revisa el formato del archivo.,Afirmación,Tr75,75,1.0,'4',0.350411504507,0.3504115045070648,0.0,85.0
+2.5,Stim\\05_028.jpg,En28_2,Enojo,2,Jonathan pasea al perro.,Afirmación,En28,28,1.0,'2',0.550472974777,0.5504729747772217,0.0,86.0
+0.25,Stim\\03_028.jpg,Tr28_9,Tristeza,9,Marco colabora en la organización del evento.,Afirmación,Tr28,28,1.0,'4',0.400283187628,0.40028318762779236,0.0,87.0
+0.25,Stim\\03_078.jpg,Tr78_9,Tristeza,9,Marco colabora en la organización del evento.,Afirmación,Tr78,78,1.0,'4',0.44979339838,0.44979339838027954,0.0,88.0
+2.5,Stim\\03_075.jpg,Tr75_12,Tristeza,12,Ana compra el libro.,Afirmación,Tr75,75,1.0,'4',0.300320714712,0.30032071471214294,0.0,89.0
+2.5,Stim\\05_078.jpg,En78_11,Enojo,11,María asiste a la cena.,Afirmación,En78,78,1.0,'2',0.350045144558,0.3500451445579529,0.0,90.0
+2.5,Stim\\02_075.jpg,Al75_14,Alegría,14,Elizabeth elige la ropa un día antes.,Afirmación,Al75,75,1.0,'3',0.383603364229,0.38360336422920227,0.0,91.0
+0.25,Stim\\03_019.jpg,Tr19_7,Tristeza,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Tr19,19,1.0,'3',0.333718299866,0.33371829986572266,0.0,92.0
+0.25,Stim\\05_075.jpg,En75_5,Enojo,5,Emilio revisa el formato del archivo.,Afirmación,En75,75,1.0,'2',0.400541573763,0.4005415737628937,0.0,93.0
+2.5,Stim\\05_019.jpg,En19_14,Enojo,14,Elizabeth elige la ropa un día antes.,Afirmación,En19,19,1.0,'2',0.483642578125,0.483642578125,0.0,94.0
+0.25,Stim\\02_075.jpg,Al75_2,Alegría,2,Jonathan pasea al perro.,Afirmación,Al75,75,1.0,'3',0.383695304394,0.3836953043937683,0.0,95.0
+2.5,Stim\\03_028.jpg,Tr28_10,Tristeza,10,Laura finaliza la obra.,Afirmación,Tr28,28,1.0,'4',0.483571648598,0.4835716485977173,0.0,96.0
+2.5,Stim\\02_078.jpg,Al78_3,Alegría,3,Andrea diseña la portada del libro.,Afirmación,Al78,78,1.0,'3',0.400206446648,0.40020644664764404,0.0,97.0
+2.5,Stim\\05_075.jpg,En75_3,Enojo,3,Andrea diseña la portada del libro.,Afirmación,En75,75,1.0,'2',0.433865964413,0.4338659644126892,0.0,98.0
+2.5,Stim\\03_075.jpg,Tr75_3,Tristeza,3,Andrea diseña la portada del libro.,Afirmación,Tr75,75,1.0,'4',1.31678593159,1.3167859315872192,0.0,99.0
+2.5,Stim\\03_075.jpg,Tr75_7,Tristeza,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Tr75,75,1.0,'4',0.333728551865,0.333728551864624,0.0,100.0
+2.5,Stim\\03_019.jpg,Tr19_14,Tristeza,14,Elizabeth elige la ropa un día antes.,Afirmación,Tr19,19,1.0,'3',0.599957764149,0.5999577641487122,0.0,101.0
+2.5,Stim\\05_078.jpg,En78_5,Enojo,5,Emilio revisa el formato del archivo.,Afirmación,En78,78,1.0,'2',0.400263547897,0.40026354789733887,0.0,102.0
+2.5,Stim\\02_078.jpg,Al78_12,Alegría,12,Ana compra el libro.,Afirmación,Al78,78,1.0,'3',0.450286060572,0.45028606057167053,0.0,103.0
+2.5,Stim\\02_028.jpg,Al28_13,Alegría,13,Rocío consume alimentos nutritivos.,Afirmación,Al28,28,1.0,'3',0.450235188007,0.45023518800735474,0.0,104.0
+2.5,Stim\\05_028.jpg,En28_4,Enojo,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,En28,28,1.0,'2',0.866799235344,0.8667992353439331,0.0,105.0
+0.25,Stim\\02_028.jpg,Al28_7,Alegría,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Al28,28,1.0,'3',0.400670528412,0.40067052841186523,0.0,106.0
+0.25,Stim\\02_078.jpg,Al78_12,Alegría,12,Ana compra el libro.,Afirmación,Al78,78,1.0,'3',0.500589728355,0.5005897283554077,0.0,107.0
+2.5,Stim\\02_028.jpg,Al28_7,Alegría,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Al28,28,1.0,'3',0.400307297707,0.400307297706604,0.0,108.0
+0.25,Stim\\02_075.jpg,Al75_7,Alegría,7,Roberto contesta los cuestionarios solicitados.,Afirmación,Al75,75,1.0,'3',0.533757448196,0.5337574481964111,0.0,109.0
+0.25,Stim\\05_075.jpg,En75_10,Enojo,10,Laura finaliza la obra.,Afirmación,En75,75,1.0,'2',0.800271868706,0.8002718687057495,0.0,110.0
+2.5,Stim\\05_028.jpg,En28_8,Enojo,8,Estefanía despierta a las 7 a.m.,Afirmación,En28,28,1.0,'2',0.650345802307,0.6503458023071289,0.0,111.0
+0.25,Stim\\03_075.jpg,Tr75_6,Tristeza,6,Eduardo camina hacia la biblioteca.,Afirmación,Tr75,75,1.0,'4',0.450252592564,0.45025259256362915,0.0,112.0
+0.25,Stim\\02_078.jpg,Al78_4,Alegría,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,Al78,78,1.0,'3',0.400315761566,0.4003157615661621,0.0,113.0
+2.5,Stim\\02_019.jpg,Al19_13,Alegría,13,Rocío consume alimentos nutritivos.,Afirmación,Al19,19,1.0,'3',0.433815985918,0.43381598591804504,0.0,114.0
+0.25,Stim\\02_078.jpg,Al78_15,Alegría,15,Ángel envía una carta a la abuela.,Afirmación,Al78,78,1.0,'3',0.333642870188,0.3336428701877594,0.0,115.0
+2.5,Stim\\05_019.jpg,En19_4,Enojo,4,Jorge sustituye a Gustavo cada sábado.,Afirmación,En19,19,1.0,'2',0.450322657824,0.4503226578235626,0.0,116.0
+2.5,Stim\\05_075.jpg,En75_9,Enojo,9,Marco colabora en la organización del evento.,Afirmación,En75,75,1.0,'2',0.383589535952,0.3835895359516144,0.0,117.0
+0.25,Stim\\05_078.jpg,En78_8,Enojo,8,Estefanía despierta a las 7 a.m.,Afirmación,En78,78,1.0,'2',0.450403422117,0.4504034221172333,0.0,118.0
+0.25,Stim\\03_075.jpg,Tr75_12,Tristeza,12,Ana compra el libro.,Afirmación,Tr75,75,1.0,'4',0.35034814477,0.3503481447696686,0.0,119.0
+
+extraInfo
+date,2018_may._04_1847
+frameRate,60.0029185971
+expName,Experimento Piloto1
+session,001
+participant,108

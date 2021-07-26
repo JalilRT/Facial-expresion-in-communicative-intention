@@ -10,6 +10,143 @@ editor_options:
 ## Package for all workflow
 
 ```{r}
+pacman::p_load(tidyverse,ggsci,cowplot,ggpubr,data.table,gridGraphics,corrplot,formattable,ggsignif,htmltools,webshot)
+```
+
+## Experiment 1
+
+Ploting the results of each Emotion comparison and between Emotion, sex and ethnicity.
+
+```{r message=FALSE, warning=FALSE}
+total.em<-read_csv("data/E1/Total_Emoción.csv")
+total.sex<-read_csv("data/E1/Total_Sexo.csv")
+total.et<-read_csv("data/E1/Total_Etnia.csv")
+
+fig1a<-ggplot(data=total.em, aes(x=Emocion, y=Media, fill=Emocion)) +
+  geom_bar(stat="identity", position=position_dodge(), colour="black")+
+  theme_classic2()+
+  theme(legend.position="none",axis.title.x=element_blank())+
+  labs(y= 'Percentage (%)')+ylim(c(0,100))+
+  geom_errorbar(aes(ymin=Media-Error, ymax=Media+Error),
+                width=.1,                  
+                position=position_dodge(.9))+
+  scale_x_discrete(labels=c("Joy","Anger", "Neutral"))+
+  scale_fill_nejm()
+
+fig1b<-ggplot(data=total.et, aes(x=Etnia, y=Media, fill=Etnia)) +
+  geom_bar(stat="identity", position=position_dodge(), colour="black")+
+  theme_classic2()+
+  theme(legend.position="none",axis.title.x=element_blank())+
+  labs(y= ' ')+ylim(c(0,100))+
+  geom_errorbar(aes(ymin=Media-Error, ymax=Media+Error),
+                width=.1,                  
+                position=position_dodge(.9))+
+  scale_x_discrete(labels=c("Caucasian","Latin"))+
+  scale_fill_nejm()
+
+fig1c<-ggplot(data=total.sex, aes(x=Sexo, y=Media_S, fill=Sexo)) +
+  geom_bar(stat="identity", position=position_dodge(), colour="black")+
+  theme_classic2()+
+  theme(legend.position="none",axis.title.x=element_blank())+
+  labs(y= ' ')+ylim(c(0,100))+
+  geom_errorbar(aes(ymin=Media_S-Error_S, ymax=Media_S+Error_S),
+                width=.1,                  
+                position=position_dodge(.9))+
+  scale_x_discrete(labels=c("Men","Women"))+
+  scale_fill_nejm()
+
+# all together
+fig1<-plot_grid(fig1a,fig1b,fig1c,ncol = 3,labels = "AUTO")
+fig1
+```
+
+
+
+## Experiment 2
+
+A Pearson's Chi-squared test for analysis of independence was carried out to evaluate the association between the categorical variables, facial expression and speech act, according to the frequency of responses.
+
+```{r message=FALSE, warning=FALSE}
+## Chi
+Data.exp2 <- read_csv('data/E2/AH_Emo_dat.csv')
+
+Data.exp2$Emocion <- Data.exp2$Emocion %>%
+  str_replace_all("Alegria", "Joy") %>%
+  str_replace_all("Enojo", "Anger") %>% 
+  str_replace_all("Tristeza", "Sadness") %>%
+  str_replace_all("Miedo","Fear") %>% 
+  str_replace_all("Sorpresa", "Surprise") %>% 
+  str_replace_all("Asco", "Disgust")
+Data.exp2$AH <- Data.exp2$AH %>%
+  str_replace_all("Orden", "Order") %>%
+  str_replace_all("Exigencia", "Demand") %>% 
+  str_replace_all("Peticion", "Petition") %>% 
+  str_replace_all("Ruego", "E.Request")
+
+chiData.exp2 <- chisq.test(Data.exp2$Emocion, Data.exp2$AH, correct = FALSE)
+chiData.exp2
+chiData.exp2$observed
+
+#### Figure 3, corr ###
+corrplot(t(chiData.exp2$residuals), is.corr = FALSE,method="color",
+         tl.cex = 1.1, cl.ratio = 0.4,bg="black",addgrid.col = "black",
+         tl.col = "black",tl.srt=45,col= colorRampPalette(c("#0072B5FF","white","#BC3C29FF"))(9)) 
+mtext("X²(4, 4560) = 11877; p < 0.001", at=4.5, line=-26, cex=1)
 
 ```
 
+
+## Experiment 3
+
+```{r message=FALSE, warning=FALSE}
+## Chi
+Data.exp3 <- read_csv('data/E3/Data_Respuestas_AH.csv')
+
+Data.exp3$Emocion <- Data.exp3$Emocion %>%
+  str_replace_all("Alegria", "Joy") %>%
+  str_replace_all("Enojo", "Anger") %>% 
+  str_replace_all("Tristeza", "Sadness")
+Data.exp3$Respuesta <- Data.exp3$Respuesta %>%
+  str_replace_all("Afirmacion", "Assertion") %>%
+  str_replace_all("Exigencia", "Demand") %>% 
+  str_replace_all("Ruego", "E.Request")
+
+chiData.exp3 <- chisq.test(Data.exp3$Emocion, Data.exp3$Respuesta, correct = FALSE)
+chiData.exp3
+chiData.exp3$observed
+
+#### Figure 3, corr ###
+corrplot(chiData.exp3$residuals, is.corr = FALSE,method="color",
+         tl.cex = 1.1, cl.ratio = 0.4,bg="black",addgrid.col = "black",
+         tl.col = "black",tl.srt=45,col= colorRampPalette(c("#0072B5FF","white","#BC3C29FF"))(9)) 
+mtext("X²(4, 4560) = 11877; p < 0.001", at=2.1, line=-29, cex=1)
+```
+
+```{r message=FALSE, warning=FALSE}
+Datos_verbos_30 <- read.csv('data/E3/verbos_piloto2_30_final.csv', encoding = "UTF-8")
+
+Demand= percent(Datos_verbos_30$Exigencia/100)
+Assertion = percent(Datos_verbos_30$Afirmación/100)
+E.Request = percent(Datos_verbos_30$Ruego/100)
+None = percent(Datos_verbos_30$Ninguno/100)
+SA = Datos_verbos_30$AH
+Significance = Datos_verbos_30$Significance
+
+verbos_30 <- tibble('Speech act'=SA,Demand,Assertion,E.Request,None,Significance)
+
+tabla2_verb30 <- formattable(verbos_30, list(
+  Demand = color_bar(alpha("#BC3C29FF",0.5)),
+  E.Request = color_bar(alpha("#0072B5FF",0.5)),
+  Assertion = color_bar(alpha("#E18727FF",0.5)),
+  None = color_bar('lightgray'),
+  Significance = formatter("span",
+                           style = x ~ style(color = ifelse(x, "green", "red")),
+                           x ~ icontext(ifelse(x, "ok", "remove"), ifelse(x, "Yes", "No")))))
+
+tabla2_verb30
+
+```
+
+
+
+## Experiment 4
